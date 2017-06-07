@@ -55,7 +55,7 @@ a {
       padding-bottom: 70px; } }
   @media screen and (min-width: 940px) {
     .info-post {
-      width: 35%;
+      width: 30%;
       padding: 50px;
       height: 100vh;
       float: left; } }
@@ -72,6 +72,37 @@ a {
   text-decoration: none;
   color: #000; }
 
+.icons {
+  display: block;
+  padding: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Merriweather", serif;
+  width: 100%;
+  cursor: pointer;
+  color: #2b6a90; }
+  .icons:hover {
+    background-color: #f7f7f7; }
+
+.icon-selected {
+  display: block;
+  padding: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Merriweather", serif;
+  width: 100%;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  color: #ff8000; }
+  .icon-selected path {
+    fill: #ff8000; }
+  .icon-selected rect {
+    fill: #ff8000; }
+
+.contact-post {
+  margin: 50px 0;
+  font-size: 15px; }
+
 /*---------------Sub Main--------------------*/
 .sub-main {
   display: table-caption;
@@ -80,12 +111,20 @@ a {
     .sub-main {
       float: right;
       padding-right: 2em;
-      padding-top: 35px;
-      width: 60%; } }
+      padding-top: 95px;
+      width: 70%; } }
 
 .reproductor {
   border: 1px solid #d7d7d7;
   height: 440px; }
+
+/*---------------Posts--------------------*/
+.posts {
+  display: none; }
+
+.post-open {
+  display: block;
+  opacity: 1; }
 
 h2 {
   font-size: 2.5em; }
@@ -128,11 +167,7 @@ hr {
 .site-name {
   font-weight: normal;
   font-size: 18px;
-  line-height: 1;
-  text-align: center; }
-  @media screen and (min-width: 940px) {
-    .site-name {
-      margin: 0 0 0 50px; } }
+  line-height: 1; }
 
 .question-post {
   border: 1px solid #e0dfdf;
@@ -140,7 +175,9 @@ hr {
   bottom: 0;
   right: 0;
   border-bottom: 1px solid #dfdfdf;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  width: 30%;
+  z-index: 3; }
 
 .question-title {
   background-color: #0f2944;
@@ -159,5 +196,52 @@ hr {
 .is-open .question-text {
   display: block;
   opacity: 1; }
+
+.question-button {
+  background-color: #0f2944;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center; }
+
+form {
+  padding: 25px; }
+  form textarea {
+    height: 150px;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 15px; }
+  form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    font-size: 15px; }
+
+.submit-button {
+  border: 0;
+  background-color: #0f2944;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: 0; }
+  .submit-button:hover {
+    opacity: 0.8; }
+
+.input-hide {
+  display: none; }
+
+.input-show {
+  display: block;
+  margin-left: 10px; }
+
+.list-form {
+  list-style: none;
+  font-size: 20px; }
+
+.boxes-form {
+  width: 10%;
+  height: 15px; }
 
 /*# sourceMappingURL=style.css.map */

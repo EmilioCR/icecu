@@ -11,7 +11,7 @@ html {
     height: 100%;
     -ms-text-size-adjust: 100%; // 3
     -webkit-text-size-adjust: 100%; // 3
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body {
@@ -56,17 +56,16 @@ a {
 
 /*---------------Info Post--------------------*/
 .info-post {
-    
     background-color: #f2f2f2;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, .2);
     padding: 30px 30px 120px;
-
+    
     @media screen and (min-width: 630px) {
         padding-bottom: 70px;
     }
 
     @media screen and (min-width: 940px) {
-        width: 35%;
+        width: 30%;
         padding: 50px;
         height: 100vh;
         float: left;
@@ -87,6 +86,46 @@ a {
     color: #000;
 }
 
+.icons  {
+    display: block;
+    padding: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Merriweather", serif;
+    width: 100%;
+    cursor: pointer;
+    color: #2b6a90;
+
+    &:hover {
+        background-color: #f7f7f7;
+    }
+}
+
+.icon-selected {
+    display: block;
+    padding: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Merriweather", serif;
+    width: 100%;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    color: #ff8000;
+
+    path {
+        fill: #ff8000;
+    }
+
+    rect {
+        fill: #ff8000;
+    }
+}
+
+.contact-post {
+    margin: 50px 0;
+    font-size: 15px;
+}
+
 /*---------------Sub Main--------------------*/
 .sub-main {
     display: table-caption;
@@ -95,8 +134,8 @@ a {
     @media screen and (min-width: 940px) {
         float: right;
         padding-right: 2em;
-        padding-top: 35px;
-        width: 60%;
+        padding-top: 95px;
+        width: 70%;
     }
 }
 
@@ -104,3 +143,16 @@ a {
     border: 1px solid #d7d7d7;
     height: 440px;
 }
+
+/*---------------Posts--------------------*/
+.posts {
+    display: none;
+}
+
+.post-open {
+    display: block;
+    opacity: 1;
+}
+
+
+
